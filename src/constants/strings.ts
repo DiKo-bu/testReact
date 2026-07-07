@@ -1,0 +1,1 @@
+export const my_TEXT = 'Привет, мир!!';
