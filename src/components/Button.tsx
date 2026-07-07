@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableOpacity, Text, GestureResponderEvent} from 'react-native';
-import {appStyles} from '../styles/appStyle';
+import {appStyle} from '../styles/appStyle';
 
 interface ButtonProps {
   title: string;
@@ -12,13 +12,13 @@ interface ButtonProps {
 export const Button = ({title, onPress, disabled = false, testID}: ButtonProps) => {
   return (
     <TouchableOpacity
-      style={[appStyles.button, disabled && appStyles.buttonDisabled]}
+      style={[appStyle.button, disabled && appStyle.buttonDisabled]}
       onPress={onPress}
       disabled={disabled}
       activeOpacity={0.7}
       testID={testID}
     >
-      <Text style={[appStyles.buttonText, disabled && appStyles.textDisabled]}>
+      <Text style={[appStyle.buttonText, disabled && appStyle.textDisabled]}>
         {title}
       </Text>
     </TouchableOpacity>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {View, Text, Alert} from 'react-native';
-import {appStyles} from '../styles/appStyles';
+import {appStyle} from '../styles/appStyle';
 import {
   GREETING_TEXT,
   BUTTON_PRESSED_TEXT,
